@@ -53,9 +53,9 @@ function Videos(props: { channelName: string; AppID: string }) {
   return (
         <div className="relative flex h-screen w-screen flex-1 justify-between p-1">
           <div className="min-h-full min-w-full rounded-xl ">
-          {remoteUsers.length?remoteUsers.map((user) => (
+          {remoteUsers.length?
              <RemoteUser user={remoteUsers[0]} />
-          )):<Loader />}
+          :<Loader />}
           </div>
           <div className="absolute bottom-2.5 right-2.5 z-10 h-40 w-60 ">
             <LocalVideoTrack
